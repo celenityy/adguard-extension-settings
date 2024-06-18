@@ -30,6 +30,7 @@ Ad Blocking:
 
 * `EasyList` -> ✅
 
+<br>
 
 **Privacy** -> ✅
 
@@ -47,6 +48,7 @@ Privacy:
 
 * `Fanboy's Anti-Facebook List` -> ✅
 
+<br>
 
 **Social Widgets** -> ✅
 
@@ -56,48 +58,55 @@ Social Widgets:
 
 * `Fanboy's Social Blocking List` -> ✅
 
+<br>
 
 **Annoyances** -> ✅
 
 Annoyances:
 
-`AdGuard Cookie Notices filter` -> ✅
+* `AdGuard Cookie Notices filter` -> ✅
 
-`AdGuard Popups filter` -> ✅
+* `AdGuard Popups filter` -> ✅
 
-`AdGuard Mobile App Banners filter` -> ✅
+* `AdGuard Mobile App Banners filter` -> ✅
 
-`AdGuard Other Annoyances filter` -> ✅
+* `AdGuard Other Annoyances filter` -> ✅
 
-`AdGuard Widgets filter` -> ✅
+* `AdGuard Widgets filter` -> ✅
 
-`AdGuard Annoyances filter` -> ✅
+* `AdGuard Annoyances filter` -> ✅
 
-`Adblock Warning Removal List` -> ✅
+* `Adblock Warning Removal List` -> ✅
 
-`Fanboy's Annoyances` -> ✅
+* `Fanboy's Annoyances` -> ✅
 
-`EasyList Cookie List` -> ✅
+* `EasyList Cookie List` -> ✅
 
-`Dandelion Sprout's Annoyances List` -> ✅
+* `Dandelion Sprout's Annoyances List` -> ✅
+
+<br>
 
 **Security** -> ✅
 
 Security:
 
-`Online Malicious URL Blocklist` -> ✅
+* `Online Malicious URL Blocklist` -> ✅
 
-`Phishing URL Blocklist` -> ✅
+* `Phishing URL Blocklist` -> ✅
 
-`Scam Blocklist by DurableNapkin` -> ✅ *(Only enable this if you don't also have DNS content blocking with this list enabled in place, otherwise keep this list disabled)*
+* `Scam Blocklist by DurableNapkin` -> ✅ *(Only enable this if you don't also have DNS content blocking with this list enabled in place, otherwise keep this list disabled)*
 
-`uBlock Origin - Badware risks` -> ✅
+* `uBlock Origin - Badware risks` -> ✅
+
+<br>
 
 **Other** -> ✅
 
 Other:
 
-`AdGuard DNS filter` -> ✅  *(Only enable this if you don't also have DNS content blocking with this list enabled in place, otherwise keep this list disabled and re-disable the `Other` category)*
+* `AdGuard DNS filter` -> ✅  *(Only enable this if you don't also have DNS content blocking with this list enabled in place, otherwise keep this list disabled and re-disable the `Other` category)*
+
+<br>
 
 **Custom** -> ✅
 
@@ -171,51 +180,51 @@ This is where it can really depend on you and your set-up. I'll provide my recom
 
 First, I would highly recommend setting the following to protect against [IDN Homograph attacks](https://wikipedia.org/wiki/IDN_homograph_attack) *You don't need to set this if your DNS provider already provides IDN Homograph Attacks Protection (i.e. NextDNS)*:
 
-`xn--*`
+* `xn--*`
 
-`xn--*$doc,popup,frame`
+* `xn--*$doc,popup,frame`
 
 I usually also set the following to always enforce blocking Google's Doubleclick & Google Analytics: ((Why?)[https://github.com/gorhill/uBlock/wiki/Privacy-stuff])
 
-`||doubleclick.net^$important`
+* `||doubleclick.net^$important`
 
-`||google-analytics.com^$important`
+* `||google-analytics.com^$important`
 
 Additionally, I set the following to block social media tracking on websites:
 
-`||facebook.com^$important,third-party`
+* `||facebook.com^$important,third-party`
 
-`||facebook.net^$important,third-party`
+* `||facebook.net^$important,third-party`
 
-`||linkedin.com^$important,third-party`
+* `||linkedin.com^$important,third-party`
 
-`||instagram.com^$important,third-party`
+* `||instagram.com^$important,third-party`
 
-`||tiktok.com^$important,third-party`
+* `||tiktok.com^$important,third-party`
 
 I also set this to block [tracking from Gravatar](https://github.com/gorhill/uBlock/wiki/Privacy-stuff):
 
-`||gravatar.com^$important,third-party`
+* `||gravatar.com^$important,third-party`
 
 I also set these rules to block 3rd party sign-in prompts from Google & Apple, as they're 1: annoying and 2: a tracking concern:
 
-`||accounts.google.com^$third-party`
+* `||accounts.google.com^$third-party`
 
-`||appleid.apple.com^$third-party`
+* `||appleid.apple.com^$third-party`
 
-`||appleid.cdn-apple.com^$third-party`
+* `||appleid.cdn-apple.com^$third-party`
 
-`@@||accounts.google.com^$domain=youtube.com|chromium.org|gstatic.com|googleusercontent.com`
+* `@@||accounts.google.com^$domain=youtube.com|chromium.org|gstatic.com|googleusercontent.com`
 
-`@@||appleid.apple.com^$domain=appleid.cdn-apple.com`
+* `@@||appleid.apple.com^$domain=appleid.cdn-apple.com`
 
-`@@||appleid.cdn-apple.com^$domain=appleid.apple.com`
+* `@@||appleid.cdn-apple.com^$domain=appleid.apple.com`
 
 Finally, I usually set the following to block the annoying banner on Old Reddit promoting Reddit's new UI.
 
-`www.reddit.com###redesign-beta-optin-btn`
+* `www.reddit.com###redesign-beta-optin-btn`
 
-`old.reddit.com###redesign-beta-optin-btn`
+* `old.reddit.com###redesign-beta-optin-btn`
 
 Once you are done here, make sure to select `Save`.
 
