@@ -4,6 +4,8 @@ My recommendations for the ultimate configuration of AdGuard's browser extension
 
 **NOTE:** For AdGuard on Safari on iOS, see [here](https://codeberg.org/Magnesium1062/adguard-safari-settings-ios), and for AdGuard on Safari on macOS, see [here](https://codeberg.org/Magnesium1062/adguard-safari-settings-macos).
 
+**NOTE:** This project can be found on both [Codeberg](https://codeberg.org/Magnesium1062/adguard-extension-settings), which will act as the main & preferred way to contribute, and [GitHub](https://github.com/Retold3202/adguard-extension-settings).
+
 # General
 
 **Block search ads and websites' self-promotion** -> ✅
